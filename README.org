@@ -1,0 +1,13 @@
+#+title: Parse CSV file
+#+author: Eason Huang
+
+Use Boost::tokenizer to Parse CSV file with C++.
+
+https://stackoverflow.com/questions/1120140/how-can-i-read-and-parse-csv-files-in-c
+
+
+* Build with CMake and Ninja
+#+begin_src bash
+cmake -S . -B build -GNinja -DCMAKE_EXPORT_COMPILE_COMMANDS=1
+ninja -C build && ./build/main
+#+end_src
