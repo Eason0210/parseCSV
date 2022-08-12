@@ -3,8 +3,6 @@
 
 Use [[https://www.boost.org/doc/libs/1_80_0/libs/tokenizer/doc/tokenizer.htm][Boost::tokenizer]] to Parse CSV file with C++.
 
-https://stackoverflow.com/questions/1120140/how-can-i-read-and-parse-csv-files-in-c
-
 * Install Dependency and tools
 ** macOS
 Install with [[https://www.macports.org][macports]]
@@ -18,3 +16,7 @@ sudo port install ninja
 cmake -S . -B build -GNinja -DCMAKE_EXPORT_COMPILE_COMMANDS=1
 ninja -C build && ./build/main
 #+end_src
+
+* References
+- [[http://mybyteofcode.blogspot.com/2010/02/parse-csv-file-with-boost-tokenizer-in.html][Parse CSV File With Boost Tokenizer In C++]]
+- [[https://stackoverflow.com/questions/1120140/how-can-i-read-and-parse-csv-files-in-c][how-can-i-read-and-parse-csv-files-in-c]]
