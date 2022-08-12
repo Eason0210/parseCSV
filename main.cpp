@@ -8,16 +8,15 @@
 
 int main()
 {
-    using namespace std;
     using namespace boost;
-    string data("demo.csv");
+    std::string data("demo.csv");
 
-    ifstream in(data.c_str());
+    std::ifstream in(data.c_str());
     if (!in.is_open()) return 1;
 
     typedef tokenizer< escaped_list_separator<char> > Tokenizer;
-    vector< string > vec;
-    string line;
+    std::vector< std::string > vec;
+    std::string line;
 
     while (getline(in,line))
     {
@@ -25,8 +24,8 @@ int main()
         vec.assign(tok.begin(),tok.end());
 
         // vector now contains strings from one row, output to cout here
-        copy(vec.begin(), vec.end(), ostream_iterator<string>(cout, "|"));
+        copy(vec.begin(), vec.end(), std::ostream_iterator<std::string>(std::cout, "|"));
 
-        cout << "\n----------------------" << endl;
+        std::cout << "\n----------------------" << std::endl;
     }
 }
