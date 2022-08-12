@@ -5,7 +5,11 @@ Use Boost::tokenizer to Parse CSV file with C++.
 
 https://stackoverflow.com/questions/1120140/how-can-i-read-and-parse-csv-files-in-c
 
-
+* Install Boost
+** macOS
+#+begin_src bash
+sudo port install boost
+#+end_src
 * Build with CMake and Ninja
 #+begin_src bash
 cmake -S . -B build -GNinja -DCMAKE_EXPORT_COMPILE_COMMANDS=1
