@@ -8,13 +8,12 @@
 
 int main()
 {
-    using namespace boost;
     std::string data("demo.csv");
 
     std::ifstream in(data.c_str());
     if (!in.is_open()) return 1;
 
-    typedef tokenizer< escaped_list_separator<char> > Tokenizer;
+    typedef boost::tokenizer< boost::escaped_list_separator<char> > Tokenizer;
     std::vector< std::string > vec;
     std::string line;
 
