@@ -1,14 +1,17 @@
 #+title: Parse CSV file
 #+author: Eason Huang
 
-Use Boost::tokenizer to Parse CSV file with C++.
+Use [[https://www.boost.org/doc/libs/1_80_0/libs/tokenizer/doc/tokenizer.htm][Boost::tokenizer]] to Parse CSV file with C++.
 
 https://stackoverflow.com/questions/1120140/how-can-i-read-and-parse-csv-files-in-c
 
-* Install Boost
+* Install Dependency and tools
 ** macOS
+Install with [[https://www.macports.org][macports]]
 #+begin_src bash
 sudo port install boost
+sudo port install cmake
+sudo port install ninja
 #+end_src
 * Build with CMake and Ninja
 #+begin_src bash
